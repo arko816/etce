@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- MDB icon -->
+    <link rel="icon" href="img/mdb-favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style1.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <script src="./js/filter.js"></script>
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <div id="wrapper">
+      <div
+        class="container"
+        style="
+          background: rgba(126, 126, 126, 0.489);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(3.5px);
+          -webkit-backdrop-filter: blur(3.5px);
+          border-radius: 10px;
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          margin-top: 10em;
+        "
+      >
+        <div class="row">
+          
+        <input type="text" name="other_interest" style="display:none" />
+
+          <header
+            class="text-center"
+            style="
+              font-size: 50px;
+              text-decoration: underline;
+              color: rgb(255, 255, 255);
+            "
+          >
+            Dummy Table
+          </header>
+
+          <table id="emp-table"
+            class="table text-white"
+            style="font-size: 18px; margin: 0 auto; width: 80%"
+          >
+            <thead class="bg-danger">
+              <tr>
+                <th col-index = 1 scope="col">#</th>
+                <th col-index = 2 scope="col">Name
+                  <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+                </th>
+                <th col-index = 3 scope="col">Year
+                  <select class="table-filter" onchange="filter_rows()">
+                    <option value="all"></option>
+                </select>
+                </th>
+                <th col-index = 4 scope="col">Handle</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>2023</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>2021</td>
+                <td>@fat</td>
+              </tr>
+              
+              <tr>
+                <th scope="row">3</th>
+                <td>Mark</td>
+                <td>2022</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Mark</td>
+                <td>2022</td>
+                <td>@mdo</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>marry</td>
+                <td>2020</td>
+                <td>@mdo</td>
+              </tr><tr>
+                <th scope="row">5</th>
+                <td>muno</td>
+                <td>2023</td>
+                <td>@mdo</td>
+              </tr><tr>
+                <th scope="row">5</th>
+                <td>arko</td>
+                <td>2021</td>
+                <td>@mdo</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <canvas
+        id="canvas"
+        style="z-index: -1"
+        width="5600px"
+        height="4000px"
+      ></canvas>
+      <canvas
+        id="canvasbg"
+        style="z-index: -1"
+        width="5500px"
+        height="4000px"
+      ></canvas>
+    </div>
+    <script>
+
+      getUniqueValuesFromColumn()
+      
+  </script>
+    <!-- End your project here-->
+    <script defer src="./js/script.js"></script>
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+  </body>
+</html>
